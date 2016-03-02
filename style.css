@@ -1,0 +1,15 @@
+* {
+box-sizing: border-box;}
+
+table {
+  border: 1px solid black;
+}
+
+tr, td, th {
+  border: 1px solid black;
+
+}
+
+.player {
+  width: 100%;
+}
