@@ -107,13 +107,14 @@ button:hover {
   display: flex;
   flex-flow: nowrap;
   justify-content: space-between;
-  margin-top: 10px;
+  margin: 10px 0;
 }
+
 
 /* Part III: */
 /*************/
 .inside-card-col {
-  min-height: 70px;
+  min-height: 50px;
   border: 2px solid #588C7E;
   width: 20%;
   margin: 0 auto;
@@ -123,13 +124,19 @@ button:hover {
   text-align: center;
   color: yellow;
   margin: 0 auto;
-  padding: 17px 0px;
+  padding: 13px 0px;
 }
 
 .buttons-col {
   min-height: 200px;
 }
 
+.ball {
+  height: 5vw;
+  width: 8%;
+  border-radius: 50%;
+  background: red;
+}
 /* COLORS TO USE!!
 #588C7E
 #F2E394
