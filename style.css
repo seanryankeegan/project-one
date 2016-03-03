@@ -1,15 +1,138 @@
 * {
-box-sizing: border-box;}
-
-table {
-  border: 1px solid black;
-}
-
-tr, td, th {
-  border: 1px solid black;
-
-}
-
-.player {
   width: 100%;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: Tahoma;
 }
+.site-wrapper {
+  border: 1px dotted blue;
+  width: 90%;
+  margin: 0 5%;
+  padding: 20px;
+  min-height: 500px;
+}
+
+h1 {
+  text-align: center;
+  color: #F2E394;
+  font-size: 48px;
+  /*transform: rotate(-10deg);*/
+}
+
+h2 {
+  text-align: center;
+  font-family: Tahoma;
+  color: #F2AE72;
+}
+/* Parent elements (rows) collapse to zero height when only have floated children.
+    Fix that by clearing it. */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#bingoName{
+  font-weight: bolder;
+  font-size: 28px;
+  color: #8C4646;
+}
+
+.col {
+  border-top: 1px solid #588C7E;
+  border-bottom: 1px solid #588C7E;
+  float: left;
+}
+
+.nav-col,
+.ad-col {
+  min-height: 100px;
+}
+
+.buttons-col {
+  min-height: 200px;
+}
+
+
+.content-col {
+  width: 43%;
+  min-height: 400px;
+}
+
+.content-col:first-of-type {
+  margin-right: 14%;
+}
+
+/* Part II: */
+/*************/
+.card-col {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  border: 2px solid #8C4646;
+  min-height: 20px;
+  margin: 0px 0;
+}
+
+/*.hidden {
+  display: none;
+}*/
+
+.inactive {
+  opacity: 0.3;
+}
+
+.inactive:hover {
+  cursor: default;
+}
+
+.button-row .inside-card-col {
+  border: 0px;
+}
+
+button {
+  outline: none;
+  height: 50px;
+  width: 100%;
+  background: #8C4646;
+  color: #F2AE72;
+}
+button:hover {
+  background: #F2AE72;
+  color: #8C4646;
+  cursor: pointer;
+}
+
+.button-row {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Part III: */
+/*************/
+.inside-card-col {
+  min-height: 70px;
+  border: 2px solid #588C7E;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.inside-card-col p {
+  text-align: center;
+  color: yellow;
+  margin: 0 auto;
+  padding: 17px 0px;
+}
+
+.buttons-col {
+  min-height: 200px;
+}
+
+/* COLORS TO USE!!
+#588C7E
+#F2E394
+#F2AE72
+#D96459
+#8C4646*/

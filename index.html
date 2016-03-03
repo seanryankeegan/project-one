@@ -2,67 +2,292 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
-    <meta charset="utf-8">
+    <script src="main.js" charset="utf-8"></script>
+
     <title>Bingo!</title>
   </head>
   <body>
+    <body>
+      <div class="site-wrapper">
 
-    <!-- Generated from http://www.csgnetwork.com/simplehtmltablegen.html -->
-    <!-- <table>
-    <thead>
+        <!-- begin grid -->
+        <div class="grid">
 
-    <tr>
-    <th>B</th>
-    <th>I</th>
-    <th>N</th>
-    <th>G</th>
-    <th>O</th>
-    </tr>
-    </thead>
-    <tr>
-    <td id="p1r1c1" class="p1 r1 c1">[Row 1, Column 1]</td>
-    <td id="p1r1c2" class="p1 r1 c2">[Row 1, Column 2]</td>
-    <td id="p1r1c3" class="p1 r1 c3">[Row 1, Column 3]</td>
-    <td id="p1r1c4" class="p1 r1 c4">[Row 1, Column 4]</td>
-    <td id="p1r1c5" class="p1 r1 c5">[Row 1, Column 5]</td>
-    </tr>
-    <tr>
-    <td id="p1r1c1" class="p1 r2 c1">[Row 2, Column 1]</td>
-    <td id="p1r1c2" class="p1 r2 c2">[Row 2, Column 2]</td>
-    <td id="p1r1c3" class="p1 r2 c3">[Row 2, Column 3]</td>
-    <td id="p1r1c4" class="p1 r2 c4">[Row 2, Column 4]</td>
-    <td id="p1r1c5" class="p1 r2 c5">[Row 2, Column 5]</td>
-    </tr>
-    <tr>
-    <td id="p1r3c1" class="p1 r3 c1">[Row 3, Column 1]</td>
-    <td id="p1r3c2" class="p1 r3 c2">[Row 3, Column 2]</td>
-    <td id="p1r3c3" class="p1 r3 c3">[Row 3, Column 3]</td>
-    <td id="p1r3c4" class="p1 r3 c4">[Row 3, Column 4]</td>
-    <td id="p1r3c5" class="p1 r3 c5">[Row 3, Column 5]</td>
-    </tr>
-    <tr>
-      <td id="p1r4c1" class="p1 r4 c1">[Row 4, Column 1]</td>
-      <td id="p1r4c2" class="p1 r4 c2">[Row 4, Column 2]</td>
-      <td id="p1r4c3" class="p1 r4 c3">Row 4, Column 3]</td>
-      <td id="p1r4c4" class="p1 r4 c4">[Row 4, Column 4]</td>
-      <td id="p1r4c5" class="p1 r4 c5">[Row 4, Column 5]</td>
-    </tr>
-    <tr>
-      <td id="p1r5c1" class="p1 r5 c1">[Row 5, Column 1]</td>
-      <td id="p1r5c2" class="p1 r5 c2">[Row 5, Column 2]</td>
-      <td id="p1r5c3" class="p1 r5 c3">[Row 5, Column 3]</td>
-      <td id="p1r5c4" class="p1 r5 c4">[Row 5, Column 4]</td>
-      <td id="p1r5c5" class="p1 r5 c5">[Row 5, Column 5]</td>
-    </tr>
-    <tr>
-      <td id="p1r6c1" class="p1 r5 c1">[Row 6, Column 1]</td>
-      <td id="p1r6c2" class="p1 r5 c2">[Row 6, Column 2]</td>
-      <td id="p1r6c3" class="p1 r5 c3">[Row 6, Column 3]</td>
-      <td id="p1r6c4" class="p1 r5 c4">[Row 6, Column 4]</td>
-      <td id="p1r6c5" class="p1 r5 c5">[Row 6, Column 5]</td>
-    </tr>
-    </table> -->
+          <!-- BINGO row -->
+          <div class="row">
+            <div class="col nav-col">
+              <h1>BINGO!</h1>
+            </div>
+          </div>
 
-    <script src="main.js" charset="utf-8"></script>
+
+
+          <!-- bottom row -->
+          <div class="row">
+
+            <!-- left col -->
+            <div class="col content-col">
+              <div class="row">
+                <div class="col card-col">
+                  <div class="row">
+                    <h2>Player 1</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col card-col">
+                  <div class="row">
+                    <div class="col inside-card-col inside-card-col"><p id="bingoName">B</p></div>
+                    <div class="col inside-card-col inside-card-col"><p id="bingoName">I</p></div>
+                    <div class="col inside-card-col inside-card-col"><p id="bingoName">N</p></div>
+                    <div class="col inside-card-col inside-card-col"><p id="bingoName">G</p></div>
+                    <div class="col inside-card-col inside-card-col"><p id="bingoName">O</p></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col card-col">
+                  <div class="row">
+                    <div id="p1r1c1" class="col inside-card-col inside-card-col"></div>
+                    <div id="p1r1c2" class="col inside-card-col inside-card-col"></div>
+                    <div id="p1r1c3" class="col inside-card-col inside-card-col"></div>
+                    <div id="p1r1c4" class="col inside-card-col inside-card-col"></div>
+                    <div id="p1r1c5" class="col inside-card-col inside-card-col"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col card-col">
+                  <div class="row">
+                    <div id="p1r2c1" class="col inside-card-col inside-card-col"></div>
+                    <div id="p1r2c2" class="col inside-card-col inside-card-col"></div>
+                    <div id="p1r2c3" class="col inside-card-col inside-card-col"></div>
+                    <div id="p1r2c4" class="col inside-card-col inside-card-col"></div>
+                    <div id="p1r2c5" class="col inside-card-col inside-card-col"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col card-col">
+                  <div class="row">
+                    <div id="p1r3c1"class="col inside-card-col inside-card-col"></div>
+                    <div id="p1r3c2"class="col inside-card-col inside-card-col"></div>
+                    <div id="p1r3c3"class="col inside-card-col inside-card-col"></div>
+                    <div id="p1r3c4"class="col inside-card-col inside-card-col"></div>
+                    <div id="p1r3c5"class="col inside-card-col inside-card-col"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col card-col">
+                  <div class="row">
+                    <div  id="p1r4c1" class="col inside-card-col inside-card-col"></div>
+                    <div  id="p1r4c2" class="col inside-card-col inside-card-col"></div>
+                    <div  id="p1r4c3" class="col inside-card-col inside-card-col"></div>
+                    <div  id="p1r4c4" class="col inside-card-col inside-card-col"></div>
+                    <div  id="p1r4c5" class="col inside-card-col inside-card-col"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col card-col">
+                  <div class="row">
+                    <div  id="p1r5c1" class="col inside-card-col inside-card-col"></div>
+                    <div  id="p1r5c2" class="col inside-card-col inside-card-col"></div>
+                    <div  id="p1r5c3" class="col inside-card-col inside-card-col"></div>
+                    <div  id="p1r5c4" class="col inside-card-col inside-card-col"></div>
+                    <div  id="p1r5c5" class="col inside-card-col inside-card-col"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Player 2 -->
+            <div class="col content-col">
+              <div class="row">
+                <div class="col card-col">
+                  <div class="row">
+                    <h2>Player 2</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col card-col">
+                  <div class="row">
+                    <div class="col inside-card-col inside-card-col"><p id="bingoName">B</p></div>
+                    <div class="col inside-card-col inside-card-col"><p id="bingoName">I</p></div>
+                    <div class="col inside-card-col inside-card-col"><p id="bingoName">N</p></div>
+                    <div class="col inside-card-col inside-card-col"><p id="bingoName">G</p></div>
+                    <div class="col inside-card-col inside-card-col"><p id="bingoName">O</p></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col card-col">
+                  <div class="row">
+                    <div id="p2r1c1" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r1c2" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r1c3" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r1c4" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r1c5" class="col inside-card-col inside-card-col"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col card-col">
+                  <div class="row">
+                    <div id="p2r2c1" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r2c2" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r2c3" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r2c4" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r2c5" class="col inside-card-col inside-card-col"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col card-col">
+                  <div class="row">
+                    <div id="p2r3c1" class="col inside-card-col"></div>
+                    <div id="p2r3c2" class="col inside-card-col"></div>
+                    <div id="p2r3c3" class="col inside-card-col"></div>
+                    <div id="p2r3c4" class="col inside-card-col"></div>
+                    <div id="p2r3c5" class="col inside-card-col"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col card-col">
+                  <div class="row">
+                    <div id="p2r4c1" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r4c2" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r4c3" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r4c4" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r4c5" class="col inside-card-col inside-card-col"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col card-col">
+                  <div class="row">
+                    <div id="p2r5c1" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r5c2" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r5c3" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r5c4" class="col inside-card-col inside-card-col"></div>
+                    <div id="p2r5c5" class="col inside-card-col inside-card-col"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- jumbotron row -->
+          <div class="row">
+            <div class="col button-col">
+              <div class="row button-row">
+                <div class="col inside-card-col buttons">
+                  <button type="button" class="inactive">Check for Win!</button>
+                </div>
+                <div class="col inside-card-col buttons">
+                  <button type="button" id="startButton">Click to Start game!</button>
+                </div>
+                <div class="col inside-card-col">
+                  <button type="button" class="inactive">Check for Win!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Balls Shown row -->
+
+          <div class="row">
+            <div class="col button-col">
+              <div class="row button-row">
+                <div class="col inside-card-col buttons">
+                  <button type="button" name="button">Check for Win!</button>
+                </div>
+                <div class="col inside-card-col buttons">
+                  <button type="button" >Click to Start game!</button>
+                </div>
+                <div class="col inside-card-col buttons">
+                  <button type="button" name="button">Check for Win!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div> <!-- end grid -->
+
+    </div> <!-- end site wrapper -->
+
+    <!-- <script src="main.js" charset="utf-8"></script> -->
   </body>
 </html>
+
+
+
+
+
+<!-- <table>
+<thead>
+
+<tr>
+<th>B</th>
+<th>I</th>
+<th>N</th>
+<th>G</th>
+<th>O</th>
+</tr>
+</thead>
+<tr>
+<td id="p1r1c1" class="p1 r1 c1">[Row 1, Column 1]</td>
+<td id="p1r1c2" class="p1 r1 c2">[Row 1, Column 2]</td>
+<td id="p1r1c3" class="p1 r1 c3">[Row 1, Column 3]</td>
+<td id="p1r1c4" class="p1 r1 c4">[Row 1, Column 4]</td>
+<td id="p1r1c5" class="p1 r1 c5">[Row 1, Column 5]</td>
+</tr>
+<tr>
+<td id="p1r1c1" class="p1 r2 c1">[Row 2, Column 1]</td>
+<td id="p1r1c2" class="p1 r2 c2">[Row 2, Column 2]</td>
+<td id="p1r1c3" class="p1 r2 c3">[Row 2, Column 3]</td>
+<td id="p1r1c4" class="p1 r2 c4">[Row 2, Column 4]</td>
+<td id="p1r1c5" class="p1 r2 c5">[Row 2, Column 5]</td>
+</tr>
+<tr>
+<td id="p1r3c1" class="p1 r3 c1">[Row 3, Column 1]</td>
+<td id="p1r3c2" class="p1 r3 c2">[Row 3, Column 2]</td>
+<td id="p1r3c3" class="p1 r3 c3">[Row 3, Column 3]</td>
+<td id="p1r3c4" class="p1 r3 c4">[Row 3, Column 4]</td>
+<td id="p1r3c5" class="p1 r3 c5">[Row 3, Column 5]</td>
+</tr>
+<tr>
+  <td id="p1r4c1" class="p1 r4 c1">[Row 4, Column 1]</td>
+  <td id="p1r4c2" class="p1 r4 c2">[Row 4, Column 2]</td>
+  <td id="p1r4c3" class="p1 r4 c3">Row 4, Column 3]</td>
+  <td id="p1r4c4" class="p1 r4 c4">[Row 4, Column 4]</td>
+  <td id="p1r4c5" class="p1 r4 c5">[Row 4, Column 5]</td>
+</tr>
+<tr>
+  <td id="p1r5c1" class="p1 r5 c1">[Row 5, Column 1]</td>
+  <td id="p1r5c2" class="p1 r5 c2">[Row 5, Column 2]</td>
+  <td id="p1r5c3" class="p1 r5 c3">[Row 5, Column 3]</td>
+  <td id="p1r5c4" class="p1 r5 c4">[Row 5, Column 4]</td>
+  <td id="p1r5c5" class="p1 r5 c5">[Row 5, Column 5]</td>
+</tr>
+<tr>
+  <td id="p1r6c1" class="p1 r5 c1">[Row 6, Column 1]</td>
+  <td id="p1r6c2" class="p1 r5 c2">[Row 6, Column 2]</td>
+  <td id="p1r6c3" class="p1 r5 c3">[Row 6, Column 3]</td>
+  <td id="p1r6c4" class="p1 r5 c4">[Row 6, Column 4]</td>
+  <td id="p1r6c5" class="p1 r5 c5">[Row 6, Column 5]</td>
+</tr>
+</table> -->
