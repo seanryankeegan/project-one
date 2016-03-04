@@ -1,9 +1,20 @@
 * {
   width: 100%;
   box-sizing: border-box;
-  background-color: black;
   font-family: Tahoma;
 }
+
+body {
+  background-color: black;
+
+}
+.clicked {
+  background-color: red;
+  color: black;
+}
+
+
+
 .site-wrapper {
   border: 1px dotted blue;
   width: 90%;
@@ -55,12 +66,18 @@ h2 {
 
 
 .content-col {
-  width: 43%;
+  width: 45%;
+  /*min-height: 400px;*/
+}
+
+.content-colA{
+  width:10%;
+  border: 1px solid white;
   min-height: 400px;
 }
 
-.content-col:first-of-type {
-  margin-right: 14%;
+.content-col:nth-of-type(2) {
+  margin-right: 5%;
 }
 
 /* Part II: */
@@ -70,13 +87,14 @@ h2 {
   flex-flow: nowrap;
   justify-content: space-between;
   border: 2px solid #8C4646;
-  min-height: 20px;
+  /*min-height: 20px;*/
   margin: 0px 0;
 }
 
-/*.hidden {
+.hidden {
   display: none;
-}*/
+}
+
 
 .inactive {
   opacity: 0.3;
@@ -110,6 +128,12 @@ button:hover {
   margin: 10px 0;
 }
 
+.display-row {
+  display: flex;
+  flex-flow: wrap;;
+  justify-content: space-around;;
+  margin: 10px 0;
+}
 
 /* Part III: */
 /*************/
@@ -132,10 +156,37 @@ button:hover {
 }
 
 .ball {
-  height: 5vw;
-  width: 8%;
+  height: 6vw;
+  width: 78%;
   border-radius: 50%;
   background: red;
+  border: 2px solid brown;
+}
+
+.ballrow{
+  height: 28vh;
+  margin-top:10%;
+  /*border: 2px solid white;*/
+}
+
+.ballrow:first-of-type {
+  padding-top: 45%;
+}
+#placeBall {
+  width: 100%;
+  padding-left: 20%;
+}
+
+
+#getBall {
+  width:100%;
+  background: blue;
+}
+
+#ballPara {
+  background: none;
+  color: white;
+  margin-top: 30%;
 }
 /* COLORS TO USE!!
 #588C7E
