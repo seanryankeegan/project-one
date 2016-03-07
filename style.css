@@ -5,18 +5,26 @@
 }
 
 body {
-  background-color: black;
+  background-color: #EFD28D;
 
 }
+
 .clicked {
-  background-color: red;
+  background-color: #004777;
   color: black;
 }
 
+.clicked p {
+  color: white;
+}
 
+li {
+  text-align: center;
+  color: #A30000;
+  list-style: none;
+}
 
 .site-wrapper {
-  border: 1px dotted blue;
   width: 90%;
   margin: 0 5%;
   padding: 20px;
@@ -25,15 +33,14 @@ body {
 
 h1 {
   text-align: center;
-  color: #F2E394;
+  color: #A30000;
   font-size: 48px;
-  /*transform: rotate(-10deg);*/
 }
 
 h2 {
   text-align: center;
   font-family: Tahoma;
-  color: #F2AE72;
+  color: #A30000;
 }
 /* Parent elements (rows) collapse to zero height when only have floated children.
     Fix that by clearing it. */
@@ -46,12 +53,12 @@ h2 {
 #bingoName{
   font-weight: bolder;
   font-size: 28px;
-  color: #8C4646;
+  color: #A30000;
 }
 
 .col {
-  border-top: 1px solid #588C7E;
-  border-bottom: 1px solid #588C7E;
+  /*border-top: 1px solid #588C7E;
+  border-bottom: 1px solid #588C7E;*/
   float: left;
 }
 
@@ -72,7 +79,7 @@ h2 {
 
 .content-colA{
   width:10%;
-  border: 1px solid white;
+  /*border: 1px solid white;*/
   min-height: 400px;
 }
 
@@ -86,8 +93,6 @@ h2 {
   display: flex;
   flex-flow: nowrap;
   justify-content: space-between;
-  border: 2px solid #8C4646;
-  /*min-height: 20px;*/
   margin: 0px 0;
 }
 
@@ -144,9 +149,13 @@ button:hover {
   margin: 0 auto;
 }
 
+#placeBall {
+  border: none;
+}
+
 .inside-card-col p {
   text-align: center;
-  color: yellow;
+  /*color: #004777;*/
   margin: 0 auto;
   padding: 13px 0px;
 }
@@ -155,13 +164,47 @@ button:hover {
   min-height: 200px;
 }
 
+#p1button {
+  font-size: 24px;
+}
+
+#p2button {
+  font-size: 24px;
+}
+
+#startButton {
+  width:90%;
+  margin-left:5%;
+  border-radius: 10%;
+  font-size: 18px;
+}
+
 .ball {
-  height: 6vw;
+  height: 5vw;
   width: 78%;
   border-radius: 50%;
-  background: red;
-  border: 2px solid brown;
+  background: #004777;
+  border: 2px solid #00AFB5;
 }
+
+.smallBall {
+    height: 3vw;
+    margin: 5px 10px;
+    width: 4%;
+    border-radius: 50%;
+    background: #004777;
+    border: 2px solid #00AFB5;
+
+}
+
+#smallBallPara {
+    background: none;
+    color: white;
+    margin-top: 22%;
+    margin-left: 35%;
+}
+
+
 
 .ballrow{
   height: 28vh;
@@ -180,17 +223,10 @@ button:hover {
 
 #getBall {
   width:100%;
-  background: blue;
 }
 
 #ballPara {
   background: none;
   color: white;
-  margin-top: 30%;
+  margin-top: 22%;
 }
-/* COLORS TO USE!!
-#588C7E
-#F2E394
-#F2AE72
-#D96459
-#8C4646*/

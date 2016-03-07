@@ -17,6 +17,10 @@
           <div class="row">
             <div class="col nav-col">
               <h1>BINGO!</h1>
+              <ul>
+                <li>When a ball comes up, if you have that number, click it!</li>
+                <li>Get 5 in a row in any direction to win!</li>
+              </ul>
             </div>
           </div>
 
@@ -30,7 +34,7 @@
               <div class="row">
                 <div class="col card-col">
                   <div class="row">
-                    <h2>Player 1</h3>
+                    <h2 id="player1">Player 1</h3>
                   </div>
                 </div>
               </div>
@@ -118,7 +122,7 @@
               </div>
 
               <div class="ballrow">
-                <div class="col card-col">
+                <div class="col">
                   <div id="placeBall" class="col inside-card-col">
                   </div>
                 </div>
@@ -131,7 +135,7 @@
               <div class="row">
                 <div class="col card-col">
                   <div class="row">
-                    <h2>Player 2</h2>
+                    <h2 id="player2">Player 2</h2>
                   </div>
                 </div>
               </div>
@@ -214,13 +218,13 @@
             <div class="col button-col">
               <div class="row button-row">
                 <div class="col inside-card-col buttons">
-                  <button type="button" class="inactive">BINGO!!</button>
+                  <button type="button" id ="p1button" class="inactive">BINGO!!</button>
                 </div>
                 <div class="col inside-card-col buttons">
                   <!-- <button type="button" id="startButton">Click to Start game!</button> -->
                 </div>
                 <div class="col inside-card-col">
-                  <button type="button" class="inactive">BINGO!!</button>
+                  <button type="button"  id ="p2button" class="inactive">BINGO!!</button>
                 </div>
               </div>
             </div>
