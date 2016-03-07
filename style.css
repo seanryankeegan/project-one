@@ -42,8 +42,7 @@ h2 {
   font-family: Tahoma;
   color: #A30000;
 }
-/* Parent elements (rows) collapse to zero height when only have floated children.
-    Fix that by clearing it. */
+
 .row:after {
   content: "";
   display: table;
@@ -57,8 +56,6 @@ h2 {
 }
 
 .col {
-  /*border-top: 1px solid #588C7E;
-  border-bottom: 1px solid #588C7E;*/
   float: left;
 }
 
@@ -74,12 +71,10 @@ h2 {
 
 .content-col {
   width: 45%;
-  /*min-height: 400px;*/
 }
 
 .content-colA{
   width:10%;
-  /*border: 1px solid white;*/
   min-height: 400px;
 }
 
@@ -87,8 +82,7 @@ h2 {
   margin-right: 5%;
 }
 
-/* Part II: */
-/*************/
+
 .card-col {
   display: flex;
   flex-flow: nowrap;
@@ -140,8 +134,6 @@ button:hover {
   margin: 10px 0;
 }
 
-/* Part III: */
-/*************/
 .inside-card-col {
   min-height: 50px;
   border: 2px solid #588C7E;
@@ -209,7 +201,6 @@ button:hover {
 .ballrow{
   height: 28vh;
   margin-top:10%;
-  /*border: 2px solid white;*/
 }
 
 .ballrow:first-of-type {
